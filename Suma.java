@@ -104,10 +104,11 @@ public class Suma extends Principal{
 	 * @param acumulador Variable encargada de acumular los números introducidos.
 	 * @return Devuelve el acumulador
 	 */
-	public static double sumaTipoCuatro(double num, double acumulador) {
+	public static double sumaTipoCuatro() {
+		double acumulador = 0;
 		System.out.println("Introduce un n�mero para sumarlo al acumulador: ");
 		double num = leer.nextDouble();
-		double acumulador = acumulador + num;
+		acumulador = acumulador + num;
 		return acumulador;
 	}
 
