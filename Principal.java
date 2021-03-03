@@ -8,6 +8,14 @@ public class Principal {
 		System.out.println("-INICIO COCIENTE-");
 		//Soy Pablo, realizo la prueba de Cociente
 		System.out.println(Cociente.CocienteTipoUno());
+		
+		System.out.println("-INICIO RESTA-");
+		//Soy Jaime, realizo prueba de Resta
+		System.out.println(Resta.restaTipoDos());
+		
+		
+		
+		
 		}
 	}
 
