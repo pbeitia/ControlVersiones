@@ -3,13 +3,13 @@ import java.util.Scanner;
 /**
  * Esta clase contiene la división de a calculadora.
  * @author Pablo Beitia Mateos
- * @version 1.0
+ * @version 2.0
  * @since 24/02/2021
  */
 public class Cociente extends Principal{
 	static Scanner leer = new Scanner(System.in);
 	
-	/**
+/**
 	 *<h1>Método que divide dos números enteros y devuelve el resultado de la división.</h1>
 	 * 
 	 *Casos Especiales:
