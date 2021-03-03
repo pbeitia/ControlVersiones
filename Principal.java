@@ -13,6 +13,9 @@ public class Principal {
 		//Soy Jaime, realizo prueba de Resta
 		System.out.println(Resta.restaTipoDos());
 		
+		System.out.println("-INICIO PRODUCTO-");
+		//Soy Alberto, realizo prueba de Producto
+		System.out.println(Producto.ProductoVariedad4());
 		
 		
 		
