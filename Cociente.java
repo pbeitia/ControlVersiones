@@ -1,10 +1,13 @@
+import java.util.Scanner;
+
 /**
  * Esta clase contiene la división de a calculadora.
  * @author Pablo Beitia Mateos
  * @version 1.0
  * @since 24/02/2021
  */
-public class Cociente{
+public class Cociente extends Principal{
+	static Scanner leer = new Scanner(System.in);
 	
 	/**
 	 *<h1>Método que divide dos números enteros y devuelve el resultado de la división.</h1>
@@ -23,7 +26,13 @@ public class Cociente{
 	 * @return Devuelve el resultado de la división.
 	 */
 	public static double CocienteTipoUno() {
-
+		double resultado = 0;
+		System.out.println("Introduce el dividendo: ");
+		double dividendo = leer.nextDouble();
+		System.out.println("Introduce el divisor: ");
+		double divisor = leer.nextDouble();
+		resultado = dividendo/divisor;
+		return resultado;
 	}
 	
 	/**
@@ -43,7 +52,13 @@ public class Cociente{
 	 * @return Devuelve el resultado de la división.
 	 */
 	public static double CocienteTipoDos() {
-
+		int resultado = 0;
+		System.out.println("Introduce el dividendo: ");
+		int dividendo = leer.nextInt();
+		System.out.println("Introduce el divisor: ");
+		int divisor = leer.nextInt();
+		resultado = dividendo/divisor;
+		return resultado;
 	}
 	
 	/**
@@ -61,7 +76,11 @@ public class Cociente{
 	 * @return Devuelve el resultado del inverso de un número.
 	 */
 	public static double CocienteTipoTres() {
-
+		double resultado = 0;
+		System.out.println("Introduce un número para sacar su inverso: ");
+		double numeroReal = leer.nextDouble();
+		resultado = 1/numeroReal;
+		return resultado;
 	}
 	
 	/**
@@ -79,6 +98,10 @@ public class Cociente{
 	 * @return Devuelve la raiz cuadrada de un número.
 	 */
 	public static double CocienteTipoCuatro() {
-
+		double resultado = 0;
+		System.out.println("Introduce un número para sacar su raíz: ");
+		double raiz = leer.nextDouble();
+		resultado = Math.sqrt(raiz);
+		return resultado;
 	}
 }
