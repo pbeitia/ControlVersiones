@@ -2,10 +2,13 @@
 /**
  * 
  * @author alberto
- * @version 1.0
+ * @version 2.0
  * @since 24/02/21
  *
  */
+import java.util.Scanner;
+import java.lang.Math;
+
 
 /**
  * <h1>Clase que devuelve el resultado de multiplicar distintos números.</h1>
@@ -15,6 +18,12 @@
  * @return otorga la solución recién obtenida
  */
 public class Producto extends Principal {
+	
+	
+	/**
+	 * Creo un escáner para introducir el texto.
+	 */
+	static Scanner productoIntroduce = new Scanner(System.in);
 	
 	
 	/**
@@ -33,6 +42,13 @@ public class Producto extends Principal {
 	 */
 	public static double ProductoVariedad1() {
 		
+		System.out.println("Introduce el primer múltiplo:");
+		double multiplo = productoIntroduce.nextDouble();
+		System.out.println("Introduce el segundo múltiplo");
+		double multiplo2 = productoIntroduce.nextDouble();
+		double resultado = multiplo * multiplo2;
+		System.out.print("El resultado es ");
+		return resultado;
 	}
 	
 	/**
@@ -51,6 +67,13 @@ public class Producto extends Principal {
 	 */
     public static double ProductoVariedad2() {
     	
+    	System.out.println("Introduce el primer múltiplo:");
+		int multiplo = productoIntroduce.nextInt();
+		System.out.println("Introduce el segundo múltiplo");
+		int multiplo2 = productoIntroduce.nextInt();
+		int resultado = multiplo * multiplo2;
+		System.out.print("El resultado es ");
+		return resultado;
 }
     
 	/**
@@ -68,7 +91,16 @@ public class Producto extends Principal {
 	 * @return otorga la solución recién obtenida
 	 */
     public static double ProductoVariedad3() {
-
+    
+    	System.out.println("Introduce el primer múltiplo:");
+		double multiplo = productoIntroduce.nextDouble();
+		System.out.println("Introduce el segundo múltiplo");
+		double multiplo2 = productoIntroduce.nextDouble();
+                System.out.println("Introduce el tercer múltiplo");
+		double multiplo3 = productoIntroduce.nextDouble();
+		double resultado = multiplo * multiplo2 * multiplo3;
+		System.out.print("El resultado es ");
+		return resultado;
 	}
     
 	/**
@@ -86,6 +118,13 @@ public class Producto extends Principal {
 	 * @return otorga la solución recién obtenida
 	 */
     public static double ProductoVariedad4() {
- 
+    
+    	System.out.println("Introduce la base de la potencia:");
+		double base = productoIntroduce.nextDouble();
+		System.out.println("Introduce el exponente de la potencia;");
+		double exponente = productoIntroduce.nextDouble();
+		double resultado = (Math.pow(base, exponente));
+		System.out.print("El resultado es ");
+		return resultado;
 	}
 }
