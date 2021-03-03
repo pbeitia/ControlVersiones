@@ -1,5 +1,3 @@
-package operaciones;
-
 import java.util.Scanner;
 
 /**
@@ -77,9 +75,10 @@ public class Resta extends Principal {
 	 * @return Devuelve resultado.
 	 */
 	public static double restaTipoCuatro(){
+		double acumulador = 0;
 		System.out.println("Introduce un n�mero para sumarlo al acumulador: ");
 		double num = leer.nextDouble();
-		double acumulador = acumulador - num;
+		acumulador = acumulador - num;
 		return acumulador;
 	}
 	/**
