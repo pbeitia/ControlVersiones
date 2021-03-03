@@ -1,11 +1,14 @@
+import java.util.Scanner;
+
 /**
  * Esta clase pertenece a la operaci�n suma de la calculadora
  * @author Grupo 
- * @version 1.0
+ * @version 2.0
  * @since 22/02/2021
  */
- 
 public class Suma extends Principal{
+	static Scanner leer = new Scanner(System.in);
+	
 	/**
 	 * M�todo que suma dos n�meros reales, con dos par�metros de entrada (num1 y num2) y un par�metro de salida (resultado).
 	 * 
@@ -24,7 +27,13 @@ public class Suma extends Principal{
 	 * 
 	 */
 	public static double sumaTipoUno() {
-
+		double resultado = 0;
+		System.out.println("Introduce el primer n�mero: ");
+		double num1 = leer.nextDouble();
+		System.out.println("Introduce el segundo n�mero: ");
+		double num2 = leer.nextDouble();
+		resultado = num1 + num2;
+		return resultado;
 	}
 	
 	/**
@@ -44,7 +53,12 @@ public class Suma extends Principal{
 	 * @return
 	 */
 	public static int sumaTipoDos() {
-
+		System.out.println("Introduce el primer n�mero: ");
+		int num1 = leer.nextInt();
+		System.out.println("Introduce el segundo n�mero: ");
+		int num2 = leer.nextInt();
+		int resultado = num1 + num2;
+		return resultado;
 	}
 	
 	/**
@@ -65,7 +79,14 @@ public class Suma extends Principal{
 	 * @return
 	 */
 	public static double sumaTipoTres() {
-
+		System.out.println("Introduce el primer n�mero: ");
+		double num1 = leer.nextDouble();
+		System.out.println("Introduce el segundo n�mero: ");
+		double num2 = leer.nextDouble();
+		System.out.println("Introduce el tercer n�mero: ");
+		double num3 = leer.nextDouble();
+		double resultado = num1 + num2 + num3;
+		return resultado;
 	}
 	
 	/**
@@ -81,10 +102,13 @@ public class Suma extends Principal{
 	 *
 	 * @param num Número que añade el usuario y se acumula.
 	 * @param acumulador Variable encargada de acumular los números introducidos.
-	 * @return
+	 * @return Devuelve el acumulador
 	 */
-	public static double sumaTipoCuatro() {
-
+	public static double sumaTipoCuatro(double num, double acumulador) {
+		System.out.println("Introduce un n�mero para sumarlo al acumulador: ");
+		double num = leer.nextDouble();
+		double acumulador = acumulador + num;
+		return acumulador;
 	}
-	
+
 }
